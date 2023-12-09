@@ -9,6 +9,6 @@ Implemented Internal CSS and Internal JavaScript for further development.
 
 
 Task 2:-
-inclues 4 HTMl files.
-To start application execute admin_page.html file.
-CSS file contain CSS style sheet for HTML document.
+Includes 4 HTMl files.
+To start application execute admin_page.html file with the help of browser.
+CSS file contain CSS style-sheet for HTML document.
