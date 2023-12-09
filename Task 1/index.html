@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> -: Web Design Task :- </title>
+    <!-- Google Font Link's -->    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lobster&display=swap" rel="stylesheet"> 
+  <!-- Font Awesome Link -->    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        
+
+  <!-- Internal CSS Part-->
+    <style>     
+*{
+    overflow-y: hidden;
+    overflow-x: hidden;  
+}
+
+body {
+    background-image: url("img/bgimg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}  
+
+.main {
+      position: relative;   
+      padding: 100px;
+      color: white;
+      }
+
+h1 {
+     position: relative;
+     top: 10px;
+     left: 400px;
+     padding: 20px;
+     font-weight: 60;
+     font-family: 'Lobster', sans-serif; 
+     color: wheat;   
+}      
+
+.form1 {   
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    padding: 60px 40px 40px 40px;
+    height: 650px;
+    width: 340px;
+    left: 220px;    
+    bottom: 100px;
+    overflow: auto;
+    border-radius: 5px; 
+    box-shadow:0px 0px 8px 8px black;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+    
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+}
+::-webkit-scrollbar-corner{
+    width: 10px;
+}
+
+
+label {
+    position: absolute;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: -50px;
+    font-weight: 600;
+}
+
+.inpt {
+     width: 300px;
+     border: 2px solid  white;
+     border-radius: 4px;
+     padding: 14px;
+}
+
+
+input[type="file"]{
+    display: none ;
+}
+ 
+.reset {
+    position: relative;
+    padding: 10px;
+    width: 250px;
+    font-family: sans-serif;
+    background:  transparent;
+    font-weight: 600;
+    border: transparent;
+    color: white;
+    border: 2px solid white;
+    left: 40px;;
+}
+
+
+.reset:hover{
+     background-color: goldenrod;
+     font-size: 16px;
+     transition: .3s;
+     color: black;
+     font-weight: 700;
+     border: 1px solid white;
+     font-style: italic;
+     cursor: pointer;
+     box-shadow: 7px 10px black;
+    
+}
+
+
+.submit {
+    position: relative;
+    padding: 10px;
+    width: 250px;
+    font-family: sans-serif;
+    background:  transparent;
+    font-weight: 600;
+    border: transparent;
+    color: white;
+    border: 2px solid white;
+    left: 40px;;
+}
+
+.submit:hover{
+    background-color: goldenrod;
+    font-size: 16px;
+    transition: .3s;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+    border: 1px solid white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 7px 10px black;
+}
+
+
+.uploadfile{
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    font-size: 18px;
+    left: 70px;
+    height: 50px;
+    width: 250px;
+    background-color: #009688;
+    text-align: center;
+    cursor: pointer;
+ 
+}
+
+.uploadfile:hover{
+       color:red;
+       background-color:pink;
+}
+
+#new{ 
+    position: relative;
+     top:25px;
+     right:100px;
+}
+.chkbox{
+    margin: 3px 0 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    bottom:-5px;
+}
+
+ </style>
+
+
+<!------------------------------------------------------------------------ Built on Screen Size = 1903×941 ------------------------------------------------------------------------------------------------------------->
+
+
+</head>
+    <body>
+        <h1 class="h1"> Registration Form :- </h1>
+            <div class="main">
+               
+                <form class="form1" action="connect.php" method="post"  enctype="multipart/form-data">
+                   
+                    <input type="radio" name="opt1"><b>User Login </b> <input type="radio" name="opt1"><b>Admin Login  </b> <br><br><br>                
+                    <label>Name:</label><br>
+                    <input type="text" name="fname"   class="inpt" id="name"  placeholder="Enter your Name Here"  autocomplete="off" maxlength="20" required ><br><br>
+
+                    <label>Email  :</label><br>
+                    <input type="email" name="email" id="emailid" placeholder="Enter your Email" class="inpt" autocomplete="off" maxlength="20" required><br><br>
+                       
+                    <label>Contact Number :</label><br>
+                    <input type="text" name="mobile" placeholder="Enter your Contect number" class="inpt" id="phone" autocomplete="off" maxlength="10" required><br><br>
+                          
+                    <label> PAN:</label><br>
+                    <input type="text" name="pan" placeholder="Enter your PAN ID" class="inpt" id="panid" autocomplete="off" maxlength="12" required><br><br>
+                      
+                    <label>PIN Code :</label><br>
+                    <input type="text" name="pin" id="pcode"  placeholder="Enter your pincode" class="inpt" autocomplete="off" maxlength="6" required ><br><br>
+                      
+                    <label>Enter Company ID :</label><br>
+                    <input type="text" name="cid" id="cpid" placeholder="Enter your CID" class="inpt" autocomplete="off" maxlength="10" required><br><br>
+                    
+                    <input type="file" id="file" name="upload" ><label for="file" class="uploadfile" > Choose KYC Document<i class="fa-solid fa-upload" id="new" required></i></label>
+                     
+                     <br><br><br><br><br>
+
+                    <label>Passoward :</label><br>
+                    <input type="password" name="pass1" id="pwd1" placeholder="Passoward" class="inpt" autocomplete="off" maxlength="20" required><br><br>
+
+                    <label>Confirm Passoward :</label><br>
+                    <input type="password" name="pass2" id="pwd2" placeholder="Re-enter Passoward" class="inpt" autocomplete="off"  maxlength="20" required><br><br>
+
+                    <!-- ******************************************************************************************************************** -->
+
+                   
+                    <input type="checkbox" class="chkbox" required> i have read and accept <u>Terms and Conditions</u>
+                    <br><br>
+                     
+                     <input type="reset" class="reset"><br><br>
+                     <input type="submit" class="submit" >
+                     <p id="Error" hidden> 
+                    
+                </form>
+            </div>
+
+
+  <!-- Internal Javascript-------------------------------------------------------------->
+    <script>
+
+
+const form  = document.querySelector('form');
+const pass1 = document.getElementById('pwd1');
+const pass2 = document.getElementById('pwd2');
+const errorM = document.getElementById('Error')
+
+form.addEventListener("submit", e => {
+   
+    if( pass1.value != pass2.value ){
+        e.preventDefault();
+    
+        alert("!!..Password Missmatch..!!")
+      }
+
+})
+
+
+</script>
+    
+
+    </body>
+</html>
+
+
